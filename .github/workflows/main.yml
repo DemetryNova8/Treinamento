@@ -12,6 +12,7 @@ jobs:
       - name: Checkmarx One CLI Action
         uses: checkmarx/ast-github-action@main #Github Action version
         with:
+        
           project_name: Checkmarx/Java-WebApp
           cx_tenant: beta_nova8
           base_uri: https://eu.ast.checkmarx.net 
