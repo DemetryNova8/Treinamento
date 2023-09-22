@@ -17,7 +17,4 @@ jobs:
           base_uri: https://eu.ast.checkmarx.net 
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
-          Vulnerability Scanners: sast
-          preset: High, Medium
-          Break_build: True
           additional_params: --scan-types sast --threshold "sast-high=1" --filter severity "high"
