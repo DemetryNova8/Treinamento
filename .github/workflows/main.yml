@@ -2,7 +2,7 @@ name: Checkmarx One Scan
 on:
   push:
     branches:
-      - master
+      - dependabot/maven/org.springframework.boot-spring-boot-starter-parent-3.1.4
 jobs:
   build:
     runs-on: ubuntu-latest
