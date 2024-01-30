@@ -18,4 +18,4 @@ jobs:
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
           incremental: 'true'
-          additional_params: --scan-types sast --file-filter '!CSRFIntegrationTest.java'
+          additional_params: --scan-types sast --file-filter '!*.CSRFIntegrationTest.java'
