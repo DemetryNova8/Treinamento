@@ -40,6 +40,8 @@ public class UserService implements UserDetailsService {
     // get user if there exists one by the name
     var userAlreadyExists = userRepository.existsByUsername(username);
     var webGoatUser = userRepository.save(new WebGoatUser(username, password));
+    const webGoatUser = new WebGoatUser(username, password);
+    userRepository.save(webGoatUser);
 
     if (!userAlreadyExists) {
       userTrackerRepository.save(
